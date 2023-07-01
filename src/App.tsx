@@ -13,7 +13,7 @@ function App() {
   const [runInterval, setRunInterval] = useState(false);
   const [activeTimer, setActiveTimer] = useState<number>(session);
   const [title, setTitle] = useState<"Session" | "Break">("Session");
-  const [reset, setReset] = useState<boolean>(false);
+  const [reset] = useState<boolean>(false);
 
   useEffect(() => {
     setClock(activeTimer * 60);
